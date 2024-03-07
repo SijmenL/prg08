@@ -1,0 +1,21 @@
+{
+  "dependencies": {
+    "@langchain/openai": "^0.0.14",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.4",
+    "express": "^4.18.2",
+    "express-validator": "^7.0.1",
+    "langchain": "^0.1.18",
+    "nodemon": "^3.0.3"
+  },
+  "scripts": {
+    "dev": "nodemon index.js"
+  },
+  "name": "langchain",
+  "version": "1.0.0",
+  "main": "routes/server.js",
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "type": "module"
+}
