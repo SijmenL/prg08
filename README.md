@@ -24,3 +24,7 @@ npm run start
 
 - De knop voor het huidige gesprek verschijnt pas na een page refresh of het beginnen van een nieuwe chat.
 - Het is niet duidelijk in welk gesprek je zit.
+
+# Live Omgeving
+
+De live omgeving: https://yfvt2p-3000.csb.app/
