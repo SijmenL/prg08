@@ -8,7 +8,6 @@ import dotenv from "dotenv";
 
 dotenv.config();
 
-// **Fix 1: Pass user message as request body instead of template literal**
 router.post('/', [check('message').notEmpty().withMessage('Message is required'),], async (req, res) => {
     const acceptHeader = req.get('Accept');
     const typeHeader = req.get('Content-Type');
@@ -87,12 +86,10 @@ router.post('/', [check('message').notEmpty().withMessage('Message is required')
 
             }
         } catch (error) {
-            // Handle potential errors during communication with OpenAI or model invocation
             console.error(error);
             res.status(500).json({message: "Internal server error"});
         }
     } else {
-        // Send 406 Not Acceptable if client doesn't accept JSON
         res.status(406).json({message: 'Unsupported format. This endpoint only supports application/json'});
     }
 
